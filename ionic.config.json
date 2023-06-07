@@ -1,0 +1,7 @@
+{
+  "name": "bluetoothNativeAppTest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
