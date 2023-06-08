@@ -17,8 +17,9 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
     <button (click)="scanDevices()">scan devices</button>
-    <h1>device ID{{deviceID}}</h1>
+    <h1>device Name: {{deviceName}}</h1>
+    <h1>device ID : {{deviceID}}</h1>
+    <h1 *ngIf="this.errorMessage">device ID : {{deviceID}}</h1>
     <h1>device UUID{{deviceUUID}}</h1>
-    <h1>device Name{{deviceName}}</h1>
   </div>
 </ion-content>
