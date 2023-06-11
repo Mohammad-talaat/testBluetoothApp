@@ -53,10 +53,10 @@ export class HomePage {
   
 
   async scanDevices() {
-    const loading = await this.loadingController.create({
-      // message: 'Scanning for devices...'
-    });
-    await loading.present();
+    // const loading = await this.loadingController.create({
+    //   // message: 'Scanning for devices...'
+    // });
+    // await loading.present();
   
     this.ble.startScan([]).subscribe(
       device => {
@@ -88,7 +88,7 @@ export class HomePage {
       error => {
         console.error(JSON.stringify(error));
         this.errorMessage = JSON.stringify(error.Msg)
-        loading.dismiss();  // Dismiss the loading spinner when an error occurs
+        // loading.dismiss();  // Dismiss the loading spinner when an error occurs
       }
     );
   }
